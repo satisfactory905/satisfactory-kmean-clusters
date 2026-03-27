@@ -69,26 +69,6 @@ Resource node data exported from the game using the [Ficsit Remote Monitoring](h
 
 Supported resources: Iron Ore, Copper Ore, Coal, Limestone, Crude Oil, Bauxite, Raw Quartz, SAM, Caterium Ore, Nitrogen Gas, Sulfur. Water and Uranium are skipped.
 
-### `factory.csv`
-A production plan spreadsheet. The tool reads two sections:
-
-| Rows | Content | Purpose |
-|------|---------|---------|
-| 24–38 | **Resources Required** — resource name and total consumption rate | Used to determine node utilization |
-| 62–434 | **Named sections** — part names grouped under section headers | Used to name clusters |
-
-Valid section headers: `SPACE ELEVATOR`, `HIGH LEVEL PARTS`, `ALUMINUM PARTS`, `ELECTRONIC PARTS`, `OIL PARTS`, `IRON AND STEEL`, `COPPER PARTS`, `LIQUIDS AND GASES`, `OTHER`.
-
-### `map.png`
-A world map image. Works at any resolution; all drawing sizes scale proportionally relative to a 1280×1280 reference. A 5000×5000 map is recommended for readability at full zoom.
-
-### `icons/` *(optional)*
-A folder of `.webp` icon files named in `Title_Snake_Case` (e.g. `Iron_Ingot.webp`, `Crude_Oil.webp`). Icons are shown above resource nodes on the map and in the legend alongside each cluster's produced parts. If the folder or a specific icon is missing, that element is silently skipped.
-
-For liquid/gas resources whose packaged form is named differently (e.g. `Packaged_Oil`), the icon loader automatically tries `Packaged_{stem}.webp` as a fallback.
-
----
-
 ### Options
 
 | Flag | Default | Description |
