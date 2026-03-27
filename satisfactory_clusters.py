@@ -335,7 +335,7 @@ RESOURCE_ICONS: Dict[str, str] = {
     "SAM":          "SAM",
     "Caterium Ore": "Caterium_Ore",
     "Sulfur":       "Sulfur",
-    # Nitrogen Gas – no icon available
+    "Nitrogen Gas": "Nitrogen",
 }
 
 
